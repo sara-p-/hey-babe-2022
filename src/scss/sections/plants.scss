@@ -1,0 +1,224 @@
+@use '../global/variables.scss' as *;
+@use '../global/mixins.scss' as *;
+// @use 'sass:math';
+
+#plants {
+  background: $purple;
+  position: relative;
+  box-sizing: border-box;
+
+  // Border
+  .border {
+    position: absolute;
+    background-color: $black;
+    top: 0px;
+    left: 0;
+    &--horizontal {
+      width: calc(100% - 60px);
+      height: 30px;
+      margin: 0 30px;
+    }
+    &--vertical {
+      width: 30px;
+      height: calc(100% - 60px);
+      margin: 30px 0;
+    }
+    &--top {
+      top: 30px;
+    }
+    &--right {
+      left: initial;
+      right: 30px;
+    }
+    &--bottom {
+      top: initial;
+      bottom: 30px;
+    }
+    &--left {
+      left: 30px;
+    }
+  }
+  // Hey Babe letter styling
+  h1.hey-babe {
+    font-size: 11vw;
+    text-align: center;
+    text-shadow: -2px -2px 0 $white, 2px -2px 0 $white, -2px 2px 0 $white,
+      2px 2px 0 $white;
+    text-transform: lowercase;
+    .letter {
+      position: relative;
+      &__item {
+        position: absolute;
+        left: 0;
+        height: 100%;
+        &--1 {
+          left: 14px;
+          top: 7px;
+        }
+        &--2 {
+          left: 7px;
+          top: 14px;
+        }
+        &--3 {
+          position: relative;
+        }
+      }
+    }
+  }
+
+  // plants
+  .image {
+    &--plant {
+      width: 100%;
+      height: auto;
+      position: absolute;
+    }
+    &--peacock2 {
+      max-width: 355px;
+      top: -25%;
+      left: 15%;
+    }
+    &--peacock1 {
+      max-width: 358px;
+      top: -12%;
+      left: -3%;
+    }
+    &--chinese-evergreen6 {
+      max-width: 357px;
+      top: -20%;
+      left: 33%;
+    }
+    &--alocasia1 {
+      max-width: 422px;
+      top: -12%;
+      right: -4%;
+    }
+    &--banana4 {
+      max-width: 340px;
+      top: -12%;
+      right: 16%;
+    }
+    &--chinese-evergreen5 {
+      max-width: 350px;
+      top: -20%;
+      right: 34%;
+    }
+    &--watermelon-plant1 {
+      max-width: 522px;
+      top: 15%;
+      right: -5%;
+    }
+    &--chinese-evergreen1 {
+      max-width: 400px;
+      top: 15%;
+      right: 25%;
+    }
+    &--croton1 {
+      max-width: 363px;
+      top: 15%;
+      left: -1%;
+    }
+    &--rattlesnake5 {
+      max-width: 300px;
+      top: 7%;
+      left: 10%;
+    }
+    &--chinese-evergreen4 {
+      max-width: 410px;
+      top: 25%;
+      left: 20%;
+    }
+    &--chinese-evergreen2 {
+      max-width: 250px;
+      top: 25%;
+      left: 39%;
+    }
+    &--snake-plant1 {
+      max-width: 350px;
+      top: 15%;
+      right: 12%;
+    }
+    &--monstera4 {
+      max-width: 575px;
+      bottom: -13%;
+      right: -7%;
+    }
+    &--fiddle-leaf1 {
+      max-width: 475px;
+      bottom: -20%;
+      right: 27%;
+    }
+    &--chinese-evergreen3 {
+      max-width: 275px;
+      bottom: -16%;
+      left: 35%;
+      z-index: 1;
+    }
+    &--banana2 {
+      max-width: 280px;
+      bottom: -17%;
+      left: 22%;
+    }
+    &--rubber-tree1 {
+      max-width: 310px;
+      bottom: -20%;
+      left: 7%;
+    }
+    &--rattlesnake2 {
+      max-width: 221px;
+      bottom: -7%;
+      right: 30%;
+      z-index: 1;
+    }
+    &--rattlesnake3 {
+      max-width: 250px;
+      bottom: -23%;
+      right: 17%;
+      z-index: 1;
+    }
+    &--monstera2 {
+      max-width: 477px;
+      bottom: -22%;
+      left: 26%;
+      z-index: 1;
+    }
+    &--nerve-plant1 {
+      max-width: 533px;
+      bottom: -9%;
+      right: -5%;
+      z-index: 1;
+    }
+    &--succulent1 {
+      max-width: 438px;
+      bottom: -3%;
+      left: -3%;
+      z-index: 1;
+    }
+    &--pothos1 {
+      max-width: 335px;
+      top: -1%;
+      left: 1%;
+      z-index: 1;
+    }
+    &--palm1 {
+      max-width: 676px;
+      top: -13%;
+      right: -9%;
+      z-index: 1;
+    }
+    &--string-of-pearls1 {
+      max-width: 183px;
+      top: -3%;
+      right: 32%;
+      z-index: 1;
+    }
+    &--flower1 {
+      max-width: 241px;
+      top: 2%;
+      right: 1%;
+      z-index: 1;
+    }
+  }
+}
+
+// Border

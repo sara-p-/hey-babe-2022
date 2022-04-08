@@ -28,7 +28,11 @@
 }
 
 // Styleguide
-@mixin heading-style($font-size, $font-family, $font-weight) {
+@mixin heading-style(
+  $font-size,
+  $font-family: $heading-font-family,
+  $font-weight: 900
+) {
   font-size: $font-size;
   font-family: $font-family;
   font-weight: $font-weight;

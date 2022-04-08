@@ -1,9 +1,9 @@
 @use 'sass:math';
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Roboto&display=swap');
 
 // Fonts
-$base-font-family: 'Montserrat', sans-serif;
-$heading-font-family: $base-font-family;
+$base-font-family: 'Roboto', sans-serif;
+$heading-font-family: 'Montserrat', sans-serif;
 
 // Font Size
 $base-font-size: 16px;
@@ -39,9 +39,10 @@ $sizes: 8px, 16px, 24px, 32px, 48px, 64px, 120px, 160px, 200px;
 $positions: top, right, bottom, left;
 
 // Colors
-$black: #363636;
+$black: #232323;
 $white: #ffffff;
 $off-white: #f3f3f3;
+$purple: #b2a6ac;
 $light-grey: #d4d4d4;
 $grey: #797979;
 $light-purple: #eacbef;

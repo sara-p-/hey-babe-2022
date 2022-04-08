@@ -20,9 +20,11 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .section {
+  $self: &;
   position: relative;
   width: 100%;
   &__wrapper {
@@ -37,6 +39,14 @@ body {
   }
   &__col {
     flex: 1;
+    padding: 0 $spacing-16;
+  }
+  &--fullscreen {
+    @extend .section;
+    #{$self}__wrapper,
+    #{$self}__row {
+      height: 100%;
+    }
   }
 }
 
