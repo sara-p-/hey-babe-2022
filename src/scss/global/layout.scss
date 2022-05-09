@@ -27,6 +27,7 @@ body {
   $self: &;
   position: relative;
   width: 100%;
+  overflow: hidden;
   &__wrapper {
     width: 100%;
     max-width: $site-width-large;

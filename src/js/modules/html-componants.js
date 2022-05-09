@@ -27,11 +27,9 @@ export function letterSplitting(words) {
   const text = words.innerText.toLowerCase()
   words.innerText = ''
   const wordsArray = text.split('')
-  console.log(wordsArray)
 
   wordsArray.forEach((letter, index) => {
     let letterSpan = createLetterGroup(letter)
-    console.log(letterSpan)
     words.append(letterSpan)
   })
 }

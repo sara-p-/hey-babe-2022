@@ -5,13 +5,27 @@
   </head>
   <body>
     <div id="fullpage">
+      <section id="home" class="section--fullscreen fullpage-section">
+        <div class="section__wrapper">
+          <div class="section__row">
+            <div class="section__col">
+              <h1>This is a thing I made for my partner.</h1>
+            </div>
+          </div>
+        </div>
+      </section>
       <section id="plants" class="section--fullscreen fullpage-section">
         <!-- Plants -->
-        <img
-          src="<%=require('../../images/plants/peacock2.svg')%>"
-          alt=""
-          class="image animate--from-bottom image--plant image--peacock2"
-        />
+        <div
+          class="image image--box image--plant image--peacock2 animate--from-bottom"
+        >
+          <img src="<%=require('../../images/plants/peacock2.svg')%>" alt="" />
+        </div>
+        <!-- <img
+      src="<%=require('../../images/plants/peacock2.svg')%>"
+      alt=""
+      class="image animate--from-bottom image--plant image--peacock2"
+    /> -->
         <img
           src="<%=require('../../images/plants/peacock1.svg')%>"
           alt=""
